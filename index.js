@@ -22,9 +22,9 @@ function customerSuccessBalancing(
     csCount[item.id] = 0;
   });
 
-  customers.forEach((cliente) => {
+  customers.forEach((customer) => {
     for (let css of csUnavailable) {
-      if (css.score >= cliente.score) {
+      if (css.score >= customer.score) {
         csCount[css.id]++;
         break;
       }
